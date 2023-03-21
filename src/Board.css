@@ -2,8 +2,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 2vw;
-    max-width: 960px;
+    gap: 1.5vw;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -21,4 +21,9 @@ svg {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.card {
+    max-width: 300px;
+    margin: 0 auto;
 }

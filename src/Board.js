@@ -14,11 +14,12 @@ function Square({ value, onSquareClick }) {
   )
 }
 
-function Menu() {
+function Menu({ value }) {
   return (
     <>
-      <div class="container">
-        <div id="card" class="card text-center border rounded mt-1 mt-md-5">
+      <div className="card mt-4">
+        <div className="card-body">
+          <span className="ms-4 fs-4 text-center">Your turn { value }</span>
         </div>
       </div>
     </>
@@ -37,6 +38,7 @@ function Board() {
 
   const [squares, setSquares] = useState(Array(9).fill(null))
 
+
   function handleClick() {
     let count = 0;
     if (count % 2 === 0) {
@@ -50,7 +52,7 @@ function Board() {
 
   return (
     <>
-      <h1 className="mt-5 text-center">Tic-Tac-Toe</h1>
+      <h1 className="mt-5 text-center display-3">Tic-Tac-Toe</h1>
 
       <div className="container mt-5">
         <div className="grid-container">
