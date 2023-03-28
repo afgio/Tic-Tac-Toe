@@ -23,6 +23,16 @@ svg {
     transform: translate(-50%, -50%);
 }
 
+.O {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+span>svg {
+    height: 70%;
+    bottom: 70%;
+}
+
 .card {
     max-width: 300px;
     margin: 0 auto;
